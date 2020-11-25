@@ -2,6 +2,7 @@ import './App.css';
 import Home from './Pages/Home.js'
 import About from './Pages/About.js'
 import Project from './Pages/Project.js'
+import Connect from './Pages/Connect.js'
 import React from "react";
 import {
   Router,
@@ -18,7 +19,7 @@ export default class App extends React.Component {
   render() {
     return (
       <Router history={history}>
-        <nav class='navbar is-transparent'>
+        <nav class='navbar is-transparent is-dark'>
           <div class='navbar-brand'>
             <h1 class='navbar-item title is-5'>
               <strong>Cnell</strong>
@@ -26,14 +27,14 @@ export default class App extends React.Component {
           </div>
           <div class='navbar-menu'>
             <div class='navbar-start'>
-              <a class='navbar-item has-text-black'>
-                <Link to='/'><strong>Home</strong></Link>
+              <a class='navbar-item'>
+                <Link to='/'><strong class='has-text-white'>Home</strong></Link>
               </a>
-              <a class='navbar-item has-text-black'>
-                <Link to='/about'><strong>About</strong></Link>
+              <a class='navbar-item'>
+                <Link to='/about'><strong class='has-text-white'>About</strong></Link>
               </a>
-              <a class='navbar-item has-text-black'>
-                <Link to='/projects'><strong>Projects</strong></Link>
+              <a class='navbar-item'>
+                <Link to='/project'><strong class='has-text-white'>Projects</strong></Link>
               </a>
             </div>
             <div class='navbar-end'>
@@ -41,12 +42,16 @@ export default class App extends React.Component {
                 <a class='navbar-link'>
                   Follow
                 </a>
-                <div class='navbar-dropdown'>
+                <div class='navbar-dropdown is-boxed'>
                   <a class='navbar-item' href='https://github.com/cnell7' target='_blank'>
-                    Github
+                    <p class='content has-text-black'>GitHub</p>
                   </a>
                   <a class='navbar-item' href='https://www.linkedin.com/in/christiannell/' target='_blank'>
-                    LinkedIn
+                    <p class='content has-text-black'>LinkedIn</p>
+                  </a>
+                  <hr class="navbar-divider"></hr>
+                  <a class='navbar-item'>
+                    <Link to='/connect'><p class='content has-text-black'>Connect</p></Link>
                   </a>
                 </div>
               </div>
@@ -57,8 +62,11 @@ export default class App extends React.Component {
           <Route path='/about'>
             <About />
           </Route>
-          <Route>
+          <Route path='/project'>
             <Project />
+          </Route>
+          <Route path='/connect'>
+            <Connect />
           </Route>
           <Route path='/'>
             <Home />
