@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './Pages/Home.js'
 import About from './Pages/About.js'
+import Project from './Pages/Project.js'
 import React from "react";
 import {
   Router,
@@ -26,10 +27,13 @@ export default class App extends React.Component {
           <div class='navbar-menu'>
             <div class='navbar-start'>
               <a class='navbar-item has-text-black'>
-                <Link to="/"><strong>Home</strong></Link>
+                <Link to='/'><strong>Home</strong></Link>
               </a>
               <a class='navbar-item has-text-black'>
-                <Link to="/about"><strong>About</strong></Link>
+                <Link to='/about'><strong>About</strong></Link>
+              </a>
+              <a class='navbar-item has-text-black'>
+                <Link to='/projects'><strong>Projects</strong></Link>
               </a>
             </div>
             <div class='navbar-end'>
@@ -50,11 +54,14 @@ export default class App extends React.Component {
           </div>
         </nav>
         <Switch>
-          <Route path="/">
-            <Home />
-          </Route>
-          <Route path="/about">
+          <Route path='/about'>
             <About />
+          </Route>
+          <Route>
+            <Project />
+          </Route>
+          <Route path='/'>
+            <Home />
           </Route>
         </Switch>
       </Router>);
