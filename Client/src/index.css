@@ -1,12 +1,6 @@
 @import "../node_modules/bulma/css/bulma.css";
 body {
   margin: 0;
-  font-family: "Dosis";
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Dosis'
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}

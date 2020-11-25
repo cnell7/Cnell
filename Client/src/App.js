@@ -1,59 +1,48 @@
+import './App.css';
 import Home from './Pages/Home.js'
-import React from 'react';
+import React from "react";
 import {
   Router,
   Switch,
   Route,
   Link
-} from 'react-router-dom';
+} from "react-router-dom";
 import history from './history.js';
 
-
-export default class App extends React.Component  {
+export default class App extends React.Component {
   constructor(props){
-    super(props);
+    super(props)
   }
-  handleCLick(){
-
-  }
-  render(){
-    return(
-    <Router history={history}>
-      <div id='test'>
-        <nav class='navbar is-black'>
+  render() {
+    return (
+      <Router history={history}>
+        <nav class='navbar is-transparent'>
           <div class='navbar-brand'>
-            <h1 class='navbar-item title is-3 has-text-white'>
+            <h1 class='navbar-item title is-5'>
               <strong>Cnell</strong>
             </h1>
           </div>
           <div class='navbar-menu'>
             <div class='navbar-start'>
-              <a class='navbar-item'>
-                <Link to='/home'><strong>Home</strong></Link>
+              <a class='navbar-item has-text-black'>
+                <Link to='/'><strong>Home</strong></Link>
               </a>
-              <div class='navbar-item has-dropdown is-hoverable'>
-                <a class='navbar-link'>
-                  Follow
-                </a>
-                <div class='navbar-dropdown'>
-                  <a class='navbar-item' href='https://github.com/cnell7' target="_blank">
-                    Github
-                  </a>
-                  <a class='navbar-item' href='https://www.linkedin.com/in/christiannell/' target='_blank'>
-                    LinkedIn
-                  </a>
-                </div>
-              </div>
+              <a class='navbar-item has-text-black'>
+                <Link to='/about'><strong>About</strong></Link>
+              </a>
             </div>
-          </div>
-        </nav>
-      </div>
 
-      <Switch>
-        <Route path='/'>
-          <Home />
-        </Route>
-      </Switch>
-    </Router>);
+          </div>
+
+        </nav>
+        <Switch>
+          <Route path='/'>
+            <Home />
+          </Route>
+          <Route path='/about'>
+            <About />
+          </Route>
+        </Switch>
+      </Router>);
   }
 }
