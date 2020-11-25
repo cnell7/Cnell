@@ -8,9 +8,9 @@ export default class Connect extends React.Component {
     }
     render(){
         return(
-            <section class='section'>
+            <div>
                 <p>Conntect</p>
-            </section>
+            </div>
         );
     }
 }
