@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './Pages/Home.js'
+import About from './Pages/About.js'
 import React from "react";
 import {
   Router,
@@ -25,21 +26,34 @@ export default class App extends React.Component {
           <div class='navbar-menu'>
             <div class='navbar-start'>
               <a class='navbar-item has-text-black'>
-                <Link to='/'><strong>Home</strong></Link>
+                <Link to="/"><strong>Home</strong></Link>
               </a>
               <a class='navbar-item has-text-black'>
-                <Link to='/about'><strong>About</strong></Link>
+                <Link to="/about"><strong>About</strong></Link>
               </a>
             </div>
-
+            <div class='navbar-end'>
+              <div class='navbar-item has-dropdown is-hoverable'>
+                <a class='navbar-link'>
+                  Follow
+                </a>
+                <div class='navbar-dropdown'>
+                  <a class='navbar-item' href='https://github.com/cnell7' target='_blank'>
+                    Github
+                  </a>
+                  <a class='navbar-item' href='https://www.linkedin.com/in/christiannell/' target='_blank'>
+                    LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-
         </nav>
         <Switch>
-          <Route path='/'>
+          <Route path="/">
             <Home />
           </Route>
-          <Route path='/about'>
+          <Route path="/about">
             <About />
           </Route>
         </Switch>

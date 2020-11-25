@@ -7,6 +7,6 @@ export default class About extends React.Component {
         super(props)
     }
     render(){
-        return(<p>About</p>);
+        return(<p>About lololl</p>);
     }
 }
