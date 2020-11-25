@@ -1,6 +1,5 @@
 import './App.css';
 import Home from './Pages/Home.js'
-import About from './Pages/About.js'
 import Project from './Pages/Project.js'
 import Connect from './Pages/Connect.js'
 import React from "react";
@@ -31,9 +30,6 @@ export default class App extends React.Component {
                 <Link to='/'><strong class='has-text-white'>Home</strong></Link>
               </a>
               <a class='navbar-item'>
-                <Link to='/about'><strong class='has-text-white'>About</strong></Link>
-              </a>
-              <a class='navbar-item'>
                 <Link to='/project'><strong class='has-text-white'>Projects</strong></Link>
               </a>
             </div>
@@ -59,9 +55,6 @@ export default class App extends React.Component {
           </div>
         </nav>
         <Switch>
-          <Route path='/about'>
-            <About />
-          </Route>
           <Route path='/project'>
             <Project />
           </Route>

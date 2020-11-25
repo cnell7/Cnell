@@ -7,6 +7,9 @@ export default class Project extends React.Component {
         super(props)
     }
     render(){
-        return(<p>Projects</p>);
+        return(
+            <section class='section'>
+                <p>Projects</p>
+            </section>);
     }
 }

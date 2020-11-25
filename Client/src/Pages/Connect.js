@@ -7,6 +7,10 @@ export default class Connect extends React.Component {
         super(props)
     }
     render(){
-        return(<p>Connect</p>);
+        return(
+            <section class='section'>
+                <p>Conntect</p>
+            </section>
+        );
     }
 }

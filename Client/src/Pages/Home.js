@@ -7,6 +7,9 @@ export default class Home extends React.Component {
         super(props)
     }
     render(){
-        return(<p>Home</p>);
+        return(
+            <section class='section'>
+                <p>Home</p>
+            </section>);
     }
 }
