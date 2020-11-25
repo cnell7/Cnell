@@ -39,11 +39,8 @@ export default class App extends React.Component  {
                   <a class='navbar-item' href='https://github.com/cnell7' target="_blank">
                     Github
                   </a>
-                  <a class='navbar-item'>
+                  <a class='navbar-item' href='https://www.linkedin.com/in/christiannell/' target='_blank'>
                     LinkedIn
-                  </a>
-                  <a class='navbar-item'>
-                    Handshake
                   </a>
                 </div>
               </div>
