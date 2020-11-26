@@ -15,7 +15,7 @@ const cors_options = {
 
 app.use(bodyParser.json());
 app.use(cors(cors_options));
-app.use(express.static(path.join(__dirname, '../Client/build')));
+app.use(express.static(path.join(__dirname, './Client/build')));
 
 app.use(expressSession({
     name: "cnellSessionCookie",
