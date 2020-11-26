@@ -3,26 +3,35 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "express-session": "^1.17.1",
-    "heroku": "^7.47.3"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "build": "cd client && npm build && npm install"
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cnell7/Cnell.git"
+  "nodemonConfig": {
+    "ignore": [
+      "./data/*.json"
+    ]
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cnell7/Cnell/issues"
+  "dependencies": {
+    "axios": "^0.21.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "data-store": "^4.0.3",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express.io": "^1.1.13",
+    "heroku": "^7.47.3",
+    "mongojs": "^3.1.0",
+    "mongoose": "^5.10.15",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.6",
+    "react": "^17.0.1",
+    "react-router-dom": "^5.2.0"
   },
-  "homepage": "https://github.com/cnell7/Cnell#readme"
+  "devDependencies": {}
 }
