@@ -28,3 +28,7 @@ app.use(expressSession({
         maxAge: 5184000000 // 2 months but set to whatever floats your boat
     }
 }));
+
+server.listen(port, () => {
+    console.log("Cnell up at " + port);
+});
