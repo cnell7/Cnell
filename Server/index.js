@@ -9,7 +9,7 @@ const path = require('path');
 const port = process.env.PORT || 3030
 
 const cors_options = {
-    origin: 'http://localhost:3030/',
+    origin: 'http://cnell.herokuapp.com/',
     credentials: true
 }
 
