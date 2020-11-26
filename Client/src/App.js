@@ -1,7 +1,7 @@
 import './App.css';
 import Home from './Pages/Home.js'
 import Project from './Pages/Project.js'
-import Connect from './Pages/Connect.js'
+import Contact from './Pages/Contact.js'
 import React from "react";
 import {
   Router,
@@ -42,14 +42,14 @@ export default class App extends React.Component {
                     </a>
                     <div class='navbar-dropdown is-boxed'>
                       <a class='navbar-item' href='https://github.com/cnell7' target='_blank'>
-                        <p class='content has-text-black'>GitHub</p>
+                        <img src='./Images/GitHub-Mark.png'></img>
                       </a>
                       <a class='navbar-item' href='https://www.linkedin.com/in/christiannell/' target='_blank'>
-                        <p class='content has-text-black'>LinkedIn</p>
+                        <img src='./Images/linked.png'></img>
                       </a>
                       <hr class="navbar-divider"></hr>
                       <a class='navbar-item'>
-                        <Link to='/connect'><p class='content has-text-black'>Connect</p></Link>
+                        <Link to='/connect'><p class='content has-text-black'>Contact</p></Link>
                       </a>
                     </div>
                   </div>
@@ -63,7 +63,7 @@ export default class App extends React.Component {
                 <Project />
               </Route>
               <Route path='/connect'>
-                <Connect />
+                <Contact />
               </Route>
               <Route path='/'>
                 <Home />
