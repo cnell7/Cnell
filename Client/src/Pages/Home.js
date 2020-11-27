@@ -20,7 +20,7 @@ export default class Home extends React.Component {
                 <div class='container'>
                     <div class="tile is-ancestor">
                         <div class="tile is-parent">
-                            <article class="tile is-child notification is-success">
+                            <article class="tile is-child notification is-danger">
                             <div class="content">
                                 <p class="title">Scripting</p>
                                 <p class="subtitle">Python - BASH</p>
