@@ -6,5 +6,18 @@ body {
 #devSubtitle{
   text-decoration: underline;
   display: inline;
+  color: white;
 }
+
+#cnellNavbar, #cnellSection {
+  background-color: black;
+}
+
+.PINK {
+  color: #f0048c;
+}
+.SHADOW {
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
 

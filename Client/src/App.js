@@ -18,27 +18,27 @@ export default class App extends React.Component {
   render() {
     return (
       <Router history={history}>
-        <section class='hero is-black is-fullheight'>
+        <section id='cnellSection' class='hero is-fullheight'>
           <div class="hero-head">
-            <nav class='navbar is-transparent is-black'>
+            <nav id='cnellNavbar' class='navbar is-transparent is-black'>
               <div class='navbar-brand'>
                 <div class='navbar-item'>
-                  <img src='./Images/N.jpg'></img>
+                  <img src='./Images/N.png'></img>
                 </div>
               </div>
               <div class='navbar-menu'>
                 <div class='navbar-start'>
                   <a class='navbar-item'>
-                    <Link to='/'><strong class='has-text-white'>Home</strong></Link>
+                    <Link to='/'><strong class='PINK'>Home</strong></Link>
                   </a>
                   <a class='navbar-item'>
-                    <Link to='/project'><strong class='has-text-white'>Projects</strong></Link>
+                    <Link to='/project'><strong class='PINK'>Projects</strong></Link>
                   </a>
                 </div>
                 <div class='navbar-end'>
                   <div class='navbar-item has-dropdown is-hoverable'>
-                    <a class='navbar-link'>
-                      Follow
+                    <a class='navbar-link is-arrowless'>
+                      <strong class='PINK'>Follow</strong>
                     </a>
                     <div class='navbar-dropdown is-boxed'>
                       <a class='navbar-item' href='https://github.com/cnell7' target='_blank'>
@@ -49,7 +49,7 @@ export default class App extends React.Component {
                       </a>
                       <hr class="navbar-divider"></hr>
                       <a class='navbar-item'>
-                        <Link to='/connect'><p class='content has-text-black'>Contact</p></Link>
+                        <Link to='/connect'><p class='content PINK'>Contact</p></Link>
                       </a>
                     </div>
                   </div>
