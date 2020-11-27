@@ -22,9 +22,9 @@ export default class App extends React.Component {
           <div class="hero-head">
             <nav class='navbar is-transparent is-black'>
               <div class='navbar-brand'>
-                <h1 class='navbar-item title is-5'>
-                  <strong>Cnell</strong>
-                </h1>
+                <div class='navbar-item'>
+                  <img src='./Images/N.jpg'></img>
+                </div>
               </div>
               <div class='navbar-menu'>
                 <div class='navbar-start'>
